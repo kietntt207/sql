@@ -249,3 +249,79 @@ Select t.*,
     from NHANVIEN t)
 SELECT A.TENPHONG, COUNT(1) SOLUONG FROM A
 GROUP BY A.TENPHONG
+
+--1. Tạo 1 bảng mới chứa thông tin trưởng phòng / quản lý dựa theo bảng nhân viên
+CREATE TABLE QUANLY AS
+SELECT * FROM NHANVIEN
+WHERE MANV IN (SELECT MA_NQL FROM NHANVIEN) OR MANV IN (SELECT TRPHG FROM PHONGBAN)
+
+SELECT * FROM QUANLY
+
+
+
+--2. Tìm và xóa dữ liệu của trưởng phòng/quản lý trong bảng dữ liệu nhân viên
+DELETE FROM NHANVIEN
+WHERE MANV IN (SELECT MA_NQL FROM NHANVIEN) OR MANV IN (SELECT TRPHG FROM PHONGBAN)
+
+COMMIT;
+
+SELECT * FROM NHANVIEN
+--3. Thêm cột dữ liệu mới vào bảng nhân viên và đặt tên cho cột mới là "NgayHetHanHD"
+ALTER TABLE NHANVIEN ADD NGAYHETHANHD DATE
+SELECT * FROM NHANVIEN
+
+--4. Cập nhật ngày "NgayHetHanHD" cho các nhóm nhân viên như sau:
+        --Nhóm nhân viên phòng 5: 18/12/2022
+        --Nhóm nhân viên phòng 6: 08/11/2022
+        --Nhóm nhân viên phòng khác: sau 4 tháng kể từ ngày hiện tại
+
+UPDATE NHANVIEN
+SET NGAYHETHANHD = '18-DEC-2022'
+WHERE PHG = 5
+
+UPDATE NHANVIEN
+SET NGAYHETHANHD = TO_DATE('08/11/2022','DD/MM/YYYY')
+WHERE PHG = 6
+
+UPDATE NHANVIEN
+SET NGAYHETHANHD = ADD_MONTHS(CURRENT_DATE,4)
+WHERE PHG NOT IN (5,6)
+
+--5. Cho biết số lượng nhân viên có mức lương trên 20000, 30000, 40000 và 50000 (yêu cầu thể hiện thông tin trên 1 bảng kết quả)
+SELECT CHECK_LUONG, COUNT(DISTINCT MANV) FROM (
+    SELECT MANV,LUONG, CASE
+WHEN LUONG > 50000 THEN 'NHAN VIEN CO LUONG >50000'
+WHEN LUONG > 40000 THEN 'NHAN VIEN CO LUONG >40000'
+WHEN LUONG > 30000 THEN 'NHAN VIEN CO LUONG >30000'
+WHEN LUONG > 20000 THEN 'NHAN VIEN CO LUONG >20000'
+ELSE 'NHAN VIEN CO LUONG <= 20000' END AS CHECK_LUONG
+FROM NHANVIEN )
+GROUP BY CHECK_LUONG
+ 
+--6. Cho biết danh sách nhân viên đã hết hạn hợp đồng trong vòng 6 tháng gần nhất.
+SELECT * FROM NHANVIEN
+WHERE (NGAYHETHANHD BETWEEN ADD_MONTHS(CURRENT_DATE,-6) AND CURRENT_DATE)
+--7. Cho biết công ty có 1 công việc mới "Đánh giá kết quả kinh doanh" và cần phân công cho các nhân Viên Nam tại phòng nghiên cứu thực hiện, yêu cầu gom nhóm các nhân viên được phân công và không được phân công.
+SELECT PHANCONGVIEC, COUNT(DISTINCT MANV) FROM
+(
+    SELECT MANV, PHAI, CASE
+    WHEN PHAI = 'Nam' AND TENPHG = 'Nghiên cứu' THEN 'Được phân công'
+    ELSE 'Không được phân công' END AS PHANCONGVIEC
+    FROM
+        (SELECT NHANVIEN.*, PHONGBAN.TENPHG FROM NHANVIEN
+        LEFT JOIN PHONGBAN
+        ON NHANVIEN.PHG = PHONGBAN.MAPHG)
+)
+GROUP BY PHANCONGVIEC
+
+
+SELECT PHANCONGVIEC, COUNT(DISTINCT MANV) FROM
+(
+    SELECT NHANVIEN.*, PHONGBAN.TENPHG,CASE
+    					WHEN NHANVIEN.PHAI = 'Nam' AND PHONGBAN.TENPHG = 'Nghiên cứu' THEN 'Được phân công'
+    					ELSE 'Không được phân công' 
+						END AS PHANCONGVIEC FROM NHANVIEN
+        LEFT JOIN PHONGBAN
+        ON NHANVIEN.PHG = PHONGBAN.MAPHG
+)
+GROUP BY PHANCONGVIEC
