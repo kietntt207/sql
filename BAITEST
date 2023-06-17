@@ -1,0 +1,32 @@
+--Cho biết số lượng nhân viên thiếu 1 trong 2 địa chỉ thường trú và hiện tại hoặc thiếu cả 2 địa chỉ. Đồng thời cho biết số lượng nhân viên có địa chỉ hiện tại trùng với địa chỉ thường trú
+SELECT CHECK_DC, COUNT(HOTEN) AS SOLUONG FROM
+(
+SELECT HOTEN,
+CASE
+	WHEN (DIACHIHIENTAI IS NULL AND DIACHITHUONGTRU IS NOT NULL) THEN 'Thiếu ĐCHT'
+    WHEN (DIACHIHIENTAI IS NOT NULL AND DIACHITHUONGTRU IS NULL) THEN 'Thiếu ĐCTT'
+	WHEN (DIACHIHIENTAI IS NULL AND DIACHITHUONGTRU IS NULL) THEN 'Thiếu ĐCHT & ĐCTT'
+    WHEN DIACHIHIENTAI = DIACHITHUONGTRU THEN 'ĐCHT trùng ĐCTT'
+ELSE 'ĐCHT khác ĐCTT'
+END AS CHECK_DC
+FROM BANG1
+)
+GROUP BY (CHECK_DC);
+-- Vui lòng tạo cột mới SĐT, NGAYSINH, GIOITINH từ thông tin cột MOTA. (SDT: 0901525034 - NGAYSINH: 28/04/2009 - GioiTinh:Nữ)
+WITH BANG2 AS
+(
+    SELECT 	HOTEN, DIACHIHIENTAI, DIACHITHUONGTRU, MOTA,
+    	SUBSTR (MOTA, INSTR (MOTA,' ',1,1)+1, INSTR (MOTA,' ',1,2) - INSTR (MOTA,' ',1,1)-1) AS SDT,
+    	SUBSTR (MOTA, INSTR (MOTA,' ',1,4), INSTR (MOTA,' ',-1,2) - INSTR (MOTA,' ',1,4)) AS NGAYSINH,
+		SUBSTR (MOTA, INSTR (MOTA,':',-1,1)+1, 3) AS GIOITINH
+    FROM BANG1
+)
+-- Kiểm tra các số điện thoại không đủ format 10 số thì thêm các số 0 vào đầu cho đến khi đạt đủ số ký tự 10 số	
+SELECT HOTEN, DIACHIHIENTAI, DIACHITHUONGTRU, MOTA, LPAD (SDT, 10, '0') AS SDT, NGAYSINH, GIOITINH FROM BANG2 BANG3
+-- Thống kê số lượng nhân viên theo tỉnh thành
+SELECT HOTEN, SUBSTR (DIACHI, INSTR (DIACHI,',',-1,1)+2, 30) FROM 
+    (SELECT HOTEN, COALESCE (NULL, DIACHIHIENTAI, NULL, DIACHITHUONGTRU, NULL) AS DIACHI FROM BANG1)
+
+
+-- Cho biết danh sách nhân viên đang sinh sống ở thành phố nha trang		
+-- Thống kê số lượng nhân viên theo năm sinh
