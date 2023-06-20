@@ -1,0 +1,336 @@
+CREATE TABLE BANG1
+(
+    HOTEN NVARCHAR2 (40),
+    DIACHIHIENTAI NVARCHAR2 (100),
+    DIACHITHUONGTRU NVARCHAR2 (100),
+    MOTA NVARCHAR2 (100)
+);
+INSERT INTO BANG1 (HOTEN, DIACHIHIENTAI, DIACHITHUONGTRU, MOTA)
+VALUES (N'Mai Lê Bích Xuân',N'60/7 Đồng Nai,  Phường Phước Hải,  Thành phố Nha Trang, Khánh Hòa',N'60/7 Đồng Nai,  Phường Phước Hải,  Thành phố Nha Trang, Khánh Hòa',N'SDT: 0901525034 - NGAYSINH: 28/04/2009 - GioiTinh:Nữ');
+INSERT INTO BANG1 (HOTEN, DIACHIHIENTAI, DIACHITHUONGTRU, MOTA)
+VALUES (N'Lê Quang Tín',N'201 Lô B, Chung cư Gò Dầu 2, Phường Tân Sơn Nhì, Quận Tân Phú, TP. Hồ Chí Minh',N'201 Lô B, Chung cư Gò Dầu 2, Phường Tân Sơn Nhì, Quận Tân Phú, TP. Hồ Chí Minh',N'SDT: 0903602450 - NGAYSINH: 24/04/2009 - GioiTinh:Nam');
+INSERT INTO BANG1 (HOTEN, DIACHIHIENTAI, DIACHITHUONGTRU, MOTA)
+VALUES (N'Nguyễn Thị Hạnh',N'10, Đường số 20, Phường 8, Quận Gò Vấp, TP. Hồ Chí Minh',N'10, Đường số 20, Phường 8, Quận Gò Vấp, TP. Hồ Chí Minh',N'SDT: 0904836234 - NGAYSINH: 20/07/2011 - GioiTinh:Nữ');
+INSERT INTO BANG1 (HOTEN, DIACHIHIENTAI, DIACHITHUONGTRU, MOTA)
+VALUES (N'Trần Anh Tài',NULL,NULL,N'SDT: 0906077701 - NGAYSINH: 13/09/2015 - GioiTinh:Nam');
+INSERT INTO BANG1 (HOTEN, DIACHIHIENTAI, DIACHITHUONGTRU, MOTA)
+VALUES (N'Nguyễn Văn Liêm',N'10, Đường số 20, Phường 8, Quận Gò Vấp, TP. Hồ Chí Minh',N'34 KP8, Lê Hồng Phong, Phú Hòa, Thủ Dầu Một, Bình Dương',N'SDT: 0906383029 - NGAYSINH: 06/09/2007 - GioiTinh:Nam');
+INSERT INTO BANG1 (HOTEN, DIACHIHIENTAI, DIACHITHUONGTRU, MOTA)
+VALUES (N'Nguyễn Tọa',N'10, Đường số 20, Phường 8, Quận Gò Vấp, TP. Hồ Chí Minh',NULL,N'SDT: 0906724201 - NGAYSINH: 27/08/2015 - GioiTinh:Nam');
+INSERT INTO BANG1 (HOTEN, DIACHIHIENTAI, DIACHITHUONGTRU, MOTA)
+VALUES (N'Lưu Vĩnh Ký',N'119 Phan Văn Trị, P.14, Q.Bình Thạnh, TP.HCM',N'119 Phan Văn Trị, P.14, Q.Bình Thạnh, TP.HCM',N'SDT: 0907317250 - NGAYSINH: 21/06/2011 - GioiTinh:Nam');
+INSERT INTO BANG1 (HOTEN, DIACHIHIENTAI, DIACHITHUONGTRU, MOTA)
+VALUES (N'Phạm Thanh Phương',N'Hẻm 61 Lê Hồng Phong, KP.3, Phú Linh, Phan Thiết, Bình Thuận',N'Hẻm 61 Lê Hồng Phong, KP.3, Phú Linh, Phan Thiết, Bình Thuận',N'SDT: 0907796716 - NGAYSINH: 08/04/2011 - GioiTinh:Nam');
+INSERT INTO BANG1 (HOTEN, DIACHIHIENTAI, DIACHITHUONGTRU, MOTA)
+VALUES (N'Nguyễn Thuận Phát',N'Tổ 2-13, Ô 1, Hải Hà 2, Thị trấn Long Hải, Huyện Long Điền, Bà Rịa Vũng Tàu',N'Tổ 2-13, Ô 1, Hải Hà 2, Thị trấn Long Hải, Huyện Long Điền, Bà Rịa Vũng Tàu',N'SDT: 08125086 - NGAYSINH: 11/04/2015 - GioiTinh:Nam');
+INSERT INTO BANG1 (HOTEN, DIACHIHIENTAI, DIACHITHUONGTRU, MOTA)
+VALUES (N'Đoàn Xuân Lâm',N'236/45 Phạm Văn Thuận KP1 . P Tam Hòa TP Biên Hòa Đồng Nai',N'236/45 Phạm Văn Thuận KP1 . P Tam Hòa TP Biên Hòa Đồng Nai',N'SDT: 08808093 - NGAYSINH: 23/05/2013 - GioiTinh:Nam');
+INSERT INTO BANG1 (HOTEN, DIACHIHIENTAI, DIACHITHUONGTRU, MOTA)
+VALUES (N'Đào Đức Thun',NULL,N'Khu 17, Xã Vĩnh Lại, Huyện Lâm Thao, Phú Thọ',N'SDT: 908876019 - NGAYSINH: 25/11/2014 - GioiTinh:Nam');
+INSERT INTO BANG1 (HOTEN, DIACHIHIENTAI, DIACHITHUONGTRU, MOTA)
+VALUES (N'Đào Thị Kim',N'khu I , Ấp Phước Hòa , xã Long Phước, H. Long Thành, Đồng Nai',N'khu I , Ấp Phước Hòa , xã Long Phước, H. Long Thành, Đồng Nai',N'SDT: 0909193942 - NGAYSINH: 17/11/2006 - GioiTinh:Nữ');
+INSERT INTO BANG1 (HOTEN, DIACHIHIENTAI, DIACHITHUONGTRU, MOTA)
+VALUES (N'Hoàng Quốc Mỹ',N'25 Nguyễn Hậu, Tân Thành, Tân Phú, TP. Hồ Chí Minh',N'25 Nguyễn Hậu, Tân Thành, Tân Phú, TP. Hồ Chí Minh',N'SDT: 0909366142 - NGAYSINH: 12/09/2011 - GioiTinh:Nam');
+INSERT INTO BANG1 (HOTEN, DIACHIHIENTAI, DIACHITHUONGTRU, MOTA)
+VALUES (N'Nguyễn Thị Tuyết',N'Phước Tỉnh, Long Hiệp. Bến Lức, Long An',NULL,N'SDT: 0909376748 - NGAYSINH: 28/01/2005 - GioiTinh:Nữ');
+INSERT INTO BANG1 (HOTEN, DIACHIHIENTAI, DIACHITHUONGTRU, MOTA)
+VALUES (N'Trần Thị Cẩm Loan',N'51 Đường Số 8, Phường 05, Quận 8, TP. Hồ Chí Minh',N'51 Đường Số 8, Phường 05, Quận 8, TP. Hồ Chí Minh',N'SDT: 0909502667 - NGAYSINH: 21/07/2014 - GioiTinh:Nữ');
+INSERT INTO BANG1 (HOTEN, DIACHIHIENTAI, DIACHITHUONGTRU, MOTA)
+VALUES (N'Lê Văn Kỷ Vật',N'Xã Hoàng Văn Thụ, Xã Hoàng Văn Thụ, Huyện Chương Mỹ, Hà Nội',N'Xã Hoàng Văn Thụ, Xã Hoàng Văn Thụ, Huyện Chương Mỹ, Hà Nội',N'SDT: 0911526829 - NGAYSINH: 14/08/2014 - GioiTinh:Nam');
+INSERT INTO BANG1 (HOTEN, DIACHIHIENTAI, DIACHITHUONGTRU, MOTA)
+VALUES (N'Lâm Biển Sinh',N'25 Nguyễn Hậu, Tân Thành, Tân Phú, TP. Hồ Chí Minh',N'13 Lê Đức Thọ, P.15, Q. Gò Vấp, TP. Hồ Chí Minh',N'SDT: 0912827779 - NGAYSINH: 27/06/2008 - GioiTinh:Nam');
+INSERT INTO BANG1 (HOTEN, DIACHIHIENTAI, DIACHITHUONGTRU, MOTA)
+VALUES (N'Lê Quỳnh Hương Giang',N'27 Tổ 18, P.Thanh Lương, Q.Hai Bà Trưng, Hà Nội',N'27 Tổ 18, P.Thanh Lương, Q.Hai Bà Trưng, Hà Nội',N'SDT: 0913848897 - NGAYSINH: 09/10/2003 - GioiTinh:Nữ');
+INSERT INTO BANG1 (HOTEN, DIACHIHIENTAI, DIACHITHUONGTRU, MOTA)
+VALUES (N'Lê Thị Ngọc Loan',N'Khu 5, Phường 1, Thành Phố Cà Mau, Cà Mau',N'Khu 5, Phường 1, Thành Phố Cà Mau, Cà Mau',N'SDT: 914818685 - NGAYSINH: 01/07/2005 - GioiTinh:Nữ');
+INSERT INTO BANG1 (HOTEN, DIACHIHIENTAI, DIACHITHUONGTRU, MOTA)
+VALUES (N'Đặng Thị Hồng',NULL,N'58 KP4, TT Châu Thành, Bến Tre',N'SDT: 0915735415 - NGAYSINH: 30/08/2005 - GioiTinh:Nữ');
+INSERT INTO BANG1 (HOTEN, DIACHIHIENTAI, DIACHITHUONGTRU, MOTA)
+VALUES (N'Trần Văn Hồng Loan',NULL,NULL,N'SDT: 0916222246 - NGAYSINH: 13/12/2007 - GioiTinh:Nam');
+INSERT INTO BANG1 (HOTEN, DIACHIHIENTAI, DIACHITHUONGTRU, MOTA)
+VALUES (N'Mã Thị Thắm',N'Cái Dầy, Châu Hưng, Vĩnh Lợi, Bạc Liêu',N'Cái Dầy, Châu Hưng, Vĩnh Lợi, Bạc Liêu',N'SDT: 0917884954 - NGAYSINH: 30/03/2007 - GioiTinh:Nữ');
+INSERT INTO BANG1 (HOTEN, DIACHIHIENTAI, DIACHITHUONGTRU, MOTA)
+VALUES (N'Đào Thị Thoa',N'Số 43, tổ 15, Phường Trần Hưng Đạo, Thành Phố Thái Bình, Thái Bình',N'Số 43, tổ 15, Phường Trần Hưng Đạo, Thành Phố Thái Bình, Thái Bình',N'SDT: 0918833594 - NGAYSINH: 20/05/2015 - GioiTinh:Nữ');
+INSERT INTO BANG1 (HOTEN, DIACHIHIENTAI, DIACHITHUONGTRU, MOTA)
+VALUES (N'Mai Thúy Phương',N'Mai Dầm, Xã Đại Thành, Thị Xã Ngã Bảy, Hậu Giang',N'Mai Dầm, Xã Đại Thành, Thị Xã Ngã Bảy, Hậu Giang',N'SDT: 0918892509 - NGAYSINH: 30/05/2006 - GioiTinh:Nữ');
+INSERT INTO BANG1 (HOTEN, DIACHIHIENTAI, DIACHITHUONGTRU, MOTA)
+VALUES (N'Nguyễn Thị Thùy',N'Số 43, tổ 15, Phường Trần Hưng Đạo, Thành Phố Thái Bình, Thái Bình',N'234 HAI BÀ TRƯNG, Phường 6, Thành Phố Đà Lạt, Lâm Đồng',N'SDT: 919799246 - NGAYSINH: 23/04/2009 - GioiTinh:Nữ');
+INSERT INTO BANG1 (HOTEN, DIACHIHIENTAI, DIACHITHUONGTRU, MOTA)
+VALUES (N'Lê Hoàng Phú Tài',N'Ấp 2, Xã Thủy Tây, Huyện Thạnh Hóa',NULL,N'SDT: 0922459453 - NGAYSINH: 17/05/2006 - GioiTinh:Nam');
+INSERT INTO BANG1 (HOTEN, DIACHIHIENTAI, DIACHITHUONGTRU, MOTA)
+VALUES (N'Trần Phong',N'86 Trường Chinh, P. Tân Sơn Nhì, Q. Tân Phú, TP. Hồ Chí Minh',N'86 Trường Chinh, P. Tân Sơn Nhì, Q. Tân Phú, TP. Hồ Chí Minh',N'SDT: 0932054997 - NGAYSINH: 14/05/2015 - GioiTinh:Nam');
+INSERT INTO BANG1 (HOTEN, DIACHIHIENTAI, DIACHITHUONGTRU, MOTA)
+VALUES (N'Nguyễn Huỳnh Anh Minh',N'54 Hương Phước, Phước Tân, Tp.Biên Hòa, Đồng Nai',N'54 Hương Phước, Phước Tân, Tp.Biên Hòa, Đồng Nai',N'SDT: 932185708 - NGAYSINH: 24/09/2014 - GioiTinh:Nữ');
+INSERT INTO BANG1 (HOTEN, DIACHIHIENTAI, DIACHITHUONGTRU, MOTA)
+VALUES (N'Nguyễn Hoàng Anh Trí',N'11 Trần Quang Diệu ,Phường 10 , TP Đà Lạt , Lâm Đồng',N'11 Trần Quang Diệu ,Phường 10 , TP Đà Lạt , Lâm Đồng',N'SDT: 0932781727 - NGAYSINH: 12/12/2009 - GioiTinh:Nam');
+INSERT INTO BANG1 (HOTEN, DIACHIHIENTAI, DIACHITHUONGTRU, MOTA)
+VALUES (N'Nguyễn Hà Mỹ Loan',N'7 Lê Thị Hồng Gấm, Phường 6, Thành Phố Mỹ Tho, Tiền Giang',N'7 Lê Thị Hồng Gấm, Phường 6, Thành Phố Mỹ Tho, Tiền Giang',N'SDT: 932822001 - NGAYSINH: 23/07/2001 - GioiTinh:Bà');
+INSERT INTO BANG1 (HOTEN, DIACHIHIENTAI, DIACHITHUONGTRU, MOTA)
+VALUES (N'Huỳnh Thanh Phụng',N'51 Ấp Phú Quới, Xã Đa Phước Hội, Huyện Mỏ Cày Nam, Bến Tre',N'51 Ấp Phú Quới, Xã Đa Phước Hội, Huyện Mỏ Cày Nam, Bến Tre',N'SDT: 0932952023 - NGAYSINH: 28/07/2014 - GioiTinh:Nam');
+INSERT INTO BANG1 (HOTEN, DIACHIHIENTAI, DIACHITHUONGTRU, MOTA)
+VALUES (N'Nguyễn Hoàng Tâm',N'34 Duy Tân, Phường 15, Quận Phú Nhuận, TP. Hồ Chí Minh',NULL,N'SDT: 0932999617 - NGAYSINH: 26/08/2010 - GioiTinh:Nam');
+INSERT INTO BANG1 (HOTEN, DIACHIHIENTAI, DIACHITHUONGTRU, MOTA)
+VALUES (N'Lê Quỳnh Ý',N'486 Gia Phú, P.1, Q.6, TP. Hồ Chí Minh',N'486 Gia Phú, P.1, Q.6, TP. Hồ Chí Minh',N'SDT: 0933011514 - NGAYSINH: 05/11/2009 - GioiTinh:Nữ');
+INSERT INTO BANG1 (HOTEN, DIACHIHIENTAI, DIACHITHUONGTRU, MOTA)
+VALUES (N'Đỗ Thị Như',N'183, Lưu Chí Hiếu, P.10, TP. Vũng Tàu, Bà Rịa-Vũng Tàu',N'183, Lưu Chí Hiếu, P.10, TP. Vũng Tàu, Bà Rịa-Vũng Tàu',N'SDT: 934021340 - NGAYSINH: 21/09/2009 - GioiTinh:Nữ');
+INSERT INTO BANG1 (HOTEN, DIACHIHIENTAI, DIACHITHUONGTRU, MOTA)
+VALUES (N'Nguyễn Hồng Ngọc',N'34 Duy Tân, Phường 15, Quận Phú Nhuận, TP. Hồ Chí Minh',N'34 Duy Tân, Phường 15, Quận Phú Nhuận, TP. Hồ Chí Minh',N'SDT: 934219081 - NGAYSINH: 28/01/2010 - GioiTinh:Nam');
+INSERT INTO BANG1 (HOTEN, DIACHIHIENTAI, DIACHITHUONGTRU, MOTA)
+VALUES (N'Trần Văn Minh',N'TK1, Đồng Phú, Đồng Hới, Quảng Bình',N'Thôn 11, Xã Đắk RLa, Huyện Đắk Mil, Đắk Nông',N'SDT: 0935319955 - NGAYSINH: 28/05/2005 - GioiTinh:Ông');
+INSERT INTO BANG1 (HOTEN, DIACHIHIENTAI, DIACHITHUONGTRU, MOTA)
+VALUES (N'Đặng Anh Tài',N'Tổ 53, khu vực 10, Phường Hải Cảng, Quy Nhơn, Bình Định',N'Tổ 53, khu vực 10, Phường Hải Cảng, Quy Nhơn, Bình Định',N'SDT: 0935821192 - NGAYSINH: 07/06/2008 - GioiTinh:Nam');
+INSERT INTO BANG1 (HOTEN, DIACHIHIENTAI, DIACHITHUONGTRU, MOTA)
+VALUES (N'Đinh Thị Thục',N'2 Duy Tân, Phường An Cựu, Thành phố Huế, Thừa Thiên Huế',N'2 Duy Tân, Phường An Cựu, Thành phố Huế, Thừa Thiên Huế',N'SDT: 935964914 - NGAYSINH: 19/07/2012 - GioiTinh:Nữ');
+INSERT INTO BANG1 (HOTEN, DIACHIHIENTAI, DIACHITHUONGTRU, MOTA)
+VALUES (N'Hoàng Ngọc Lệ',NULL,NULL,N'SDT: 0936038489 - NGAYSINH: 27/03/2006 - GioiTinh:Nữ');
+INSERT INTO BANG1 (HOTEN, DIACHIHIENTAI, DIACHITHUONGTRU, MOTA)
+VALUES (N'Trần Thị Kim Tuyến',N'D5 Đa Phước, Bình Chánh, TP. Hồ Chí Minh',N'D5 Đa Phước, Bình Chánh, TP. Hồ Chí Minh',N'SDT: 36247794 - NGAYSINH: 06/03/2006 - GioiTinh:Nữ');
+INSERT INTO BANG1 (HOTEN, DIACHIHIENTAI, DIACHITHUONGTRU, MOTA)
+VALUES (N'Lê Ngọc Nhi',N'175 Lang Vang 2, Quảng Sơn, Ninh Sơn, Ninh Thuận',N'175 Lang Vang 2, Quảng Sơn, Ninh Sơn, Ninh Thuận',N'SDT: 0936742892 - NGAYSINH: 24/09/2008 - GioiTinh:Nữ');
+INSERT INTO BANG1 (HOTEN, DIACHIHIENTAI, DIACHITHUONGTRU, MOTA)
+VALUES (N'Nguyễn Đức Bình',N'31 Đường 3/2, Phường 06, Quận 10, TP. Hồ Chí Minh',N'31 Đường 3/2, Phường 06, Quận 10, TP. Hồ Chí Minh',N'SDT: 0937077185 - NGAYSINH: 12/01/2015 - GioiTinh:Nam');
+INSERT INTO BANG1 (HOTEN, DIACHIHIENTAI, DIACHITHUONGTRU, MOTA)
+VALUES (N'Văn Kiều Ngọc Hoa',N'Ấp Long Khánh 3, Tam Phước, Biên Hòa, Đồng Nai',N'Ấp Long Khánh 3, Tam Phước, Biên Hòa, Đồng Nai',N'SDT: 0937667999 - NGAYSINH: 08/06/2013 - GioiTinh:Nam');
+INSERT INTO BANG1 (HOTEN, DIACHIHIENTAI, DIACHITHUONGTRU, MOTA)
+VALUES (N'Cao Thị Thúy',NULL,N'5N Gia Phú, Phường 06, Quận 6, TP. Hồ Chí Minh',N'SDT: 0937966457 - NGAYSINH: 21/08/2008 - GioiTinh:Nữ');
+INSERT INTO BANG1 (HOTEN, DIACHIHIENTAI, DIACHITHUONGTRU, MOTA)
+VALUES (N'Đỗ Thị Kim Thi',N'19 Tân Bình, Trường Lạc, Ô Môn, Cần Thơ',N'19 Tân Bình, Trường Lạc, Ô Môn, Cần Thơ',N'SDT: 0938116336 - NGAYSINH: 19/11/2012 - GioiTinh:Nữ');
+INSERT INTO BANG1 (HOTEN, DIACHIHIENTAI, DIACHITHUONGTRU, MOTA)
+VALUES (N'Nguyễn Thị Kim Phượng',N'8 Độc Lập, Q. Tân Phú, P.Tân Quý, TP. Hồ Chí Minh',N'8 Độc Lập, Q. Tân Phú, P.Tân Quý, TP. Hồ Chí Minh',N'SDT: 0938356782 - NGAYSINH: 16/11/2010 - GioiTinh:Nữ');
+INSERT INTO BANG1 (HOTEN, DIACHIHIENTAI, DIACHITHUONGTRU, MOTA)
+VALUES (N'Nguyễn Thị Minh Ngọc',N'37, Âu Cơ, Quận Tây Hồ, Hà Nội',N'37, Âu Cơ, Quận Tây Hồ, Hà Nội',N'SDT: 0938509526 - NGAYSINH: 05/10/2010 - GioiTinh:Nữ');
+INSERT INTO BANG1 (HOTEN, DIACHIHIENTAI, DIACHITHUONGTRU, MOTA)
+VALUES (N'Nguyễn Hoàng Phi',N'5N Gia Phú, Phường 06, Quận 6, TP. Hồ Chí Minh',NULL,N'SDT: 0938579636 - NGAYSINH: 21/11/2013 - GioiTinh:Nam');
+
+--Cho biết số lượng nhân viên thiếu 1 trong 2 địa chỉ thường trú và hiện tại hoặc thiếu cả 2 địa chỉ. Đồng thời cho biết số lượng nhân viên có địa chỉ hiện tại trùng với địa chỉ thường trú
+SELECT CHECK_DC, COUNT(HOTEN) AS SOLUONG FROM
+(
+SELECT HOTEN,
+CASE
+	WHEN (DIACHIHIENTAI IS NULL AND DIACHITHUONGTRU IS NOT NULL) THEN 'Thiếu ĐCHT'
+    WHEN (DIACHIHIENTAI IS NOT NULL AND DIACHITHUONGTRU IS NULL) THEN 'Thiếu ĐCTT'
+	WHEN (DIACHIHIENTAI IS NULL AND DIACHITHUONGTRU IS NULL) THEN 'Thiếu ĐCHT & ĐCTT'
+    WHEN DIACHIHIENTAI = DIACHITHUONGTRU THEN 'ĐCHT trùng ĐCTT'
+ELSE 'ĐCHT khác ĐCTT'
+END AS CHECK_DC
+FROM BANG1
+)
+GROUP BY (CHECK_DC);
+
+-- Vui lòng tạo cột mới SĐT, NGAYSINH, GIOITINH từ thông tin cột MOTA. (SDT: 0901525034 - NGAYSINH: 28/04/2009 - GioiTinh:Nữ)
+SELECT 	HOTEN, DIACHIHIENTAI, DIACHITHUONGTRU, MOTA,
+    	SUBSTR (MOTA, INSTR (MOTA,' ',1,1)+1, INSTR (MOTA,' ',1,2) - INSTR (MOTA,' ',1,1)-1) AS SDT,
+    	SUBSTR (MOTA, INSTR (MOTA,' ',1,4)+1, INSTR (MOTA,' ',-1,2) - INSTR (MOTA,' ',1,4)-1) AS NGAYSINH,
+		SUBSTR (MOTA, INSTR (MOTA,':',-1,1)+1, 3) AS GIOITINH
+FROM BANG1
+
+-- Kiểm tra các số điện thoại không đủ format 10 số thì thêm các số 0 vào đầu cho đến khi đạt đủ số ký tự 10 số	
+SELECT HOTEN, DIACHIHIENTAI, DIACHITHUONGTRU, MOTA, LPAD (SDT, 10, '0') AS SDT, NGAYSINH, GIOITINH FROM
+(
+	SELECT 	HOTEN, DIACHIHIENTAI, DIACHITHUONGTRU, MOTA,
+    		SUBSTR (MOTA, INSTR (MOTA,' ',1,1)+1, INSTR (MOTA,' ',1,2) - INSTR (MOTA,' ',1,1)-1) AS SDT,
+    		SUBSTR (MOTA, INSTR (MOTA,' ',1,4)+1, INSTR (MOTA,' ',-1,2) - INSTR (MOTA,' ',1,4)-1) AS NGAYSINH,
+			SUBSTR (MOTA, INSTR (MOTA,':',-1,1)+1, 3) AS GIOITINH
+    FROM BANG1
+) BANG2;
+
+-- Thống kê số lượng nhân viên theo tỉnh thành
+SELECT 	COUNT(HOTEN) AS SOLUONG,
+    	SUBSTR (DIACHI, INSTR (DIACHI,',',-1,1)+2, 70) AS TINHTHANH
+FROM
+    (SELECT HOTEN,
+    		COALESCE (NULL, DIACHIHIENTAI, NULL, DIACHITHUONGTRU, NULL) AS DIACHI
+    FROM BANG1)
+GROUP BY SUBSTR (DIACHI, INSTR (DIACHI,',',-1,1)+2, 70)
+-- Cho biết danh sách nhân viên đang sinh sống ở thành phố nha trang
+SELECT 	HOTEN,
+		COALESCE (NULL, DIACHIHIENTAI, NULL, DIACHITHUONGTRU, NULL) AS DIACHI
+FROM BANG1
+WHERE COALESCE (NULL, DIACHIHIENTAI, NULL, DIACHITHUONGTRU, NULL) LIKE INITCAP ('%NHA TRANG%')
+-- Thống kê số lượng nhân viên theo năm sinh
+WITH BANG2 AS
+    (
+	SELECT 	HOTEN, DIACHIHIENTAI, DIACHITHUONGTRU, MOTA,
+    		SUBSTR (MOTA, INSTR (MOTA,' ',1,1)+1, INSTR (MOTA,' ',1,2) - INSTR (MOTA,' ',1,1)-1) AS SDT,
+    		SUBSTR (MOTA, INSTR (MOTA,' ',1,4)+1, INSTR (MOTA,' ',-1,2) - INSTR (MOTA,' ',1,4)-1) AS NGAYSINH,
+			SUBSTR (MOTA, INSTR (MOTA,':',-1,1)+1, 3) AS GIOITINH
+    FROM BANG1
+    )
+SELECT 	EXTRACT (YEAR FROM TO_DATE(NGAYSINH,'DD/MM/YYYY')) AS NAMSINH,
+    	COUNT(HOTEN) AS SOLUONG    	
+FROM BANG2
+GROUP BY EXTRACT (YEAR FROM TO_DATE(NGAYSINH,'DD/MM/YYYY'));
+
+--Cho đoạn dữ liệu JSON như trên, vui lòng lấy danh sách số điện thoại mà KH đã đăng ký + ngày đăng ký
+With A as (Select '
+{
+  "pxObjClass": "FECredit-Int-RDM-GetTLFindMobile-Response",
+  "Sys": {
+    "Code": "1",
+    "DateTime": "2021-09-17T10:05:30.765Z",
+    "Description": "Success",
+    "pxObjClass": "FECredit-Int-SysResponseType",
+    "TransID": ".Request.Sys.TransID"
+  },
+  "TLInfo": [
+    {
+      "DOB": "24/09/1988",
+      "First_Name": "TUẤN",
+      "FullName": "PHẠM NGỌC TUẤN",
+      "Gender": "NAM",
+      "Last_Name": "PHẠM",
+      "Middle_Name": "NGỌC",
+      "National_ID": "091955486",
+      "National_ID_2": "NULL",
+      "pxObjClass": "FECredit-Int-RDM-GetTLFindMobile-TLInfo",
+      "MobiphoneInfo": [
+        {
+          "Active_Dt": "2012-12-07 00:00:00",
+          "ADDR_District": "Huyện Định Hoá",
+          "ADDR_Province_City": "Thái Nguyên",
+          "FullAddress": "Kim Phượng Định Hóa Thái Nguyên",
+          "IS_Duplicate": "1",
+          "Mobile": "84397334523",
+          "pxObjClass": "FECredit-Int-RDM-GetTLFindMobile-MobiphoneInfo",
+          "S_Sim_Date": "TRẢ TRƯỚC",
+          "SUB_Type": "TRẢ TRƯỚC"
+        },
+        {
+          "Active_Dt": "2018-08-13 00:00:00",
+          "ADDR_District": "Huyện Định Hoá",
+          "ADDR_Province_City": "Thái Nguyên",
+          "FullAddress": "Xã Kim Phượng, Huyện Định Hóa, Thái Nguyên",
+          "IS_Duplicate": "1",
+          "Mobile": "84854424988",
+          "pxObjClass": "FECredit-Int-RDM-GetTLFindMobile-MobiphoneInfo",
+          "S_Sim_Date": "TRẢ TRƯỚC",
+          "SUB_Type": "TRẢ TRƯỚC"
+        },
+        {
+          "Active_Dt": "2018-08-13 00:00:00",
+          "ADDR_District": "Huyện Định Hoá",
+          "ADDR_Province_City": "Thái Nguyên",
+          "FullAddress": "Xã Kim Phượng, Huyện Định Hóa, Thái Nguyên",
+          "IS_Duplicate": "1",
+          "Mobile": "84852134988",
+          "pxObjClass": "FECredit-Int-RDM-GetTLFindMobile-MobiphoneInfo",
+          "S_Sim_Date": "TRẢ TRƯỚC",
+          "SUB_Type": "TRẢ TRƯỚC"
+        },
+        {
+          "Active_Dt": "2018-08-13 00:00:00",
+          "ADDR_District": "Huyện Định Hoá",
+          "ADDR_Province_City": "Thái Nguyên",
+          "FullAddress": "Xã Kim Phượng, Huyện Định Hóa, Thái Nguyên",
+          "IS_Duplicate": "1",
+          "Mobile": "84853434988",
+          "pxObjClass": "FECredit-Int-RDM-GetTLFindMobile-MobiphoneInfo",
+          "S_Sim_Date": "TRẢ TRƯỚC",
+          "SUB_Type": "TRẢ TRƯỚC"
+        }
+      ]
+    }
+  ]
+}'
+as JSONDATA from Dual)
+
+Select 	Json_value (A.JSONDATA,'$.TLInfo.MobiphoneInfo[0].Mobile') AS SDT,
+    	Json_value (A.JSONDATA,'$.TLInfo.MobiphoneInfo[0].Active_Dt') AS NGAYDKY from A
+UNION ALL
+Select	Json_value (A.JSONDATA,'$.TLInfo.MobiphoneInfo[1].Mobile') AS SDT,
+    	Json_value (A.JSONDATA,'$.TLInfo.MobiphoneInfo[1].Active_Dt') AS NGAYDKY from A
+UNION ALL
+Select	Json_value (A.JSONDATA,'$.TLInfo.MobiphoneInfo[2].Mobile') AS SDT,
+    	Json_value (A.JSONDATA,'$.TLInfo.MobiphoneInfo[2].Active_Dt') AS NGAYDKY from A
+UNION ALL
+Select	Json_value (A.JSONDATA,'$.TLInfo.MobiphoneInfo[3].Mobile') AS SDT,
+    	Json_value (A.JSONDATA,'$.TLInfo.MobiphoneInfo[3].Active_Dt') AS NGAYDKY from A
+
+--Vui lòng cho biết số điện thoại nào của KH active sau ngày 01/08/2018
+With A as (Select '
+{
+  "pxObjClass": "FECredit-Int-RDM-GetTLFindMobile-Response",
+  "Sys": {
+    "Code": "1",
+    "DateTime": "2021-09-17T10:05:30.765Z",
+    "Description": "Success",
+    "pxObjClass": "FECredit-Int-SysResponseType",
+    "TransID": ".Request.Sys.TransID"
+  },
+  "TLInfo": [
+    {
+      "DOB": "24/09/1988",
+      "First_Name": "TUẤN",
+      "FullName": "PHẠM NGỌC TUẤN",
+      "Gender": "NAM",
+      "Last_Name": "PHẠM",
+      "Middle_Name": "NGỌC",
+      "National_ID": "091955486",
+      "National_ID_2": "NULL",
+      "pxObjClass": "FECredit-Int-RDM-GetTLFindMobile-TLInfo",
+      "MobiphoneInfo": [
+        {
+          "Active_Dt": "2012-12-07 00:00:00",
+          "ADDR_District": "Huyện Định Hoá",
+          "ADDR_Province_City": "Thái Nguyên",
+          "FullAddress": "Kim Phượng Định Hóa Thái Nguyên",
+          "IS_Duplicate": "1",
+          "Mobile": "84397334523",
+          "pxObjClass": "FECredit-Int-RDM-GetTLFindMobile-MobiphoneInfo",
+          "S_Sim_Date": "TRẢ TRƯỚC",
+          "SUB_Type": "TRẢ TRƯỚC"
+        },
+        {
+          "Active_Dt": "2018-08-13 00:00:00",
+          "ADDR_District": "Huyện Định Hoá",
+          "ADDR_Province_City": "Thái Nguyên",
+          "FullAddress": "Xã Kim Phượng, Huyện Định Hóa, Thái Nguyên",
+          "IS_Duplicate": "1",
+          "Mobile": "84854424988",
+          "pxObjClass": "FECredit-Int-RDM-GetTLFindMobile-MobiphoneInfo",
+          "S_Sim_Date": "TRẢ TRƯỚC",
+          "SUB_Type": "TRẢ TRƯỚC"
+        },
+        {
+          "Active_Dt": "2018-08-13 00:00:00",
+          "ADDR_District": "Huyện Định Hoá",
+          "ADDR_Province_City": "Thái Nguyên",
+          "FullAddress": "Xã Kim Phượng, Huyện Định Hóa, Thái Nguyên",
+          "IS_Duplicate": "1",
+          "Mobile": "84852134988",
+          "pxObjClass": "FECredit-Int-RDM-GetTLFindMobile-MobiphoneInfo",
+          "S_Sim_Date": "TRẢ TRƯỚC",
+          "SUB_Type": "TRẢ TRƯỚC"
+        },
+        {
+          "Active_Dt": "2018-08-13 00:00:00",
+          "ADDR_District": "Huyện Định Hoá",
+          "ADDR_Province_City": "Thái Nguyên",
+          "FullAddress": "Xã Kim Phượng, Huyện Định Hóa, Thái Nguyên",
+          "IS_Duplicate": "1",
+          "Mobile": "84853434988",
+          "pxObjClass": "FECredit-Int-RDM-GetTLFindMobile-MobiphoneInfo",
+          "S_Sim_Date": "TRẢ TRƯỚC",
+          "SUB_Type": "TRẢ TRƯỚC"
+        }
+      ]
+    }
+  ]
+}'
+as JSONDATA from Dual)
+
+Select 	Json_value (A.JSONDATA,'$.TLInfo.MobiphoneInfo[0].Mobile') AS SDT,
+    	To_date (Rtrim (Json_value (A.JSONDATA,'$.TLInfo.MobiphoneInfo[0].Active_Dt'), ' 00:'), 'YYYY-MM-DD') AS NGAYDKY from A
+    Where To_date (Rtrim (Json_value (A.JSONDATA,'$.TLInfo.MobiphoneInfo[0].Active_Dt'), ' 00:'), 'YYYY-MM-DD') > '01-AUG-18'
+UNION ALL
+Select	Json_value (A.JSONDATA,'$.TLInfo.MobiphoneInfo[1].Mobile') AS SDT,
+    	To_date (Rtrim (Json_value (A.JSONDATA,'$.TLInfo.MobiphoneInfo[1].Active_Dt'), ' 00:'), 'YYYY-MM-DD') AS NGAYDKY from A
+    Where To_date (Rtrim (Json_value (A.JSONDATA,'$.TLInfo.MobiphoneInfo[1].Active_Dt'), ' 00:'), 'YYYY-MM-DD') > '01-AUG-18'
+UNION ALL
+Select	Json_value (A.JSONDATA,'$.TLInfo.MobiphoneInfo[2].Mobile') AS SDT,
+    	To_date (Rtrim (Json_value (A.JSONDATA,'$.TLInfo.MobiphoneInfo[2].Active_Dt'), ' 00:'), 'YYYY-MM-DD') AS NGAYDKY from A
+    Where To_date (Rtrim (Json_value (A.JSONDATA,'$.TLInfo.MobiphoneInfo[2].Active_Dt'), ' 00:'), 'YYYY-MM-DD') > '01-AUG-18'
+UNION ALL
+Select	Json_value (A.JSONDATA,'$.TLInfo.MobiphoneInfo[3].Mobile') AS SDT,
+    	To_date (Rtrim (Json_value (A.JSONDATA,'$.TLInfo.MobiphoneInfo[3].Active_Dt'), ' 00:'), 'YYYY-MM-DD') AS NGAYDKY from A
+	Where To_date (Rtrim (Json_value (A.JSONDATA,'$.TLInfo.MobiphoneInfo[3].Active_Dt'), ' 00:'), 'YYYY-MM-DD') > '01-AUG-18'
